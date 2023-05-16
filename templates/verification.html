@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма верифікації користувача</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="verification-label">
+        <h1>Форма верифікації користувача</h1>
+    </div>
+    <form method="POST" action="/">
+        <label for="passport_number">Номер паспорту:</label>
+        <input type="text" id="passport_number" name="passport_number" required><br><br>
+
+        <label for="last_name">Прізвище:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="first_name">Ім'я:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="middle_name">По батькові:</label>
+        <input type="text" id="middle_name" name="middle_name" required><br><br>
+
+        <label for="issuing_authority">Орган, що видав:</label>
+        <input type="text" id="issuing_authority" name="issuing_authority" required><br><br>
+
+        <label for="issue_date">Дата видачі:</label>
+        <input type="date" id="issue_date" name="issue_date" required><br><br>
+
+        <input type="submit" value="Верифікувати">
+    </form>
+</body>
+</html>
